@@ -11,8 +11,16 @@
 .navbar {
     margin: 0;
     padding: 0;
-    position: relative;
-    display: block;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.navbar li {
+    display: inline;
+}
+
+li a {
+    text-align: center;
 }
 
 .showcase {
@@ -21,9 +29,12 @@
     background-image: url('../img/showcase.jpeg');
     background-position: absoulte;
     background-size: cover;
+}
+
+.content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     font-size: 1.6rem;
     font-family: 'IBM Plex Mono', monospace;
