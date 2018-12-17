@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+.scroll-contanier {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 
 .showcase {
     width: 100%;
@@ -34,4 +38,32 @@
 
 .content p {
     letter-spacing: 4px;
+    
+
+    animation-name: Slide;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.Projects {
+    width: 100%;
+    height: 100vh;
+    background: #ccc;
+    scroll-behavior: smooth;
+}
+
+/* ANIMATIONS */
+
+@keyframes Slide {
+    0% {
+        margin-top: -50px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
 }
