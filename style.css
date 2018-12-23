@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
 .scroll-contanier {
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -27,7 +31,7 @@
 }
 
 .content {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     font-family: 'IBM Plex Mono', monospace;
     color: #fff;
 }
@@ -37,7 +41,7 @@
 }
 
 .content p {
-    letter-spacing: 4px;
+    letter-spacing: .4rem;
     
 
     animation-name: Slide;
@@ -50,6 +54,44 @@
     height: 100vh;
     background: #ccc;
     scroll-behavior: smooth;
+}
+
+.navbar {
+    font-size: 1.8rem;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.nav_list {
+    list-style-type: none;
+}
+
+.nav_link,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nav_list li {
+    text-align: center;
+    margin: 15px auto;
+}
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
 }
 
 /* ANIMATIONS */
